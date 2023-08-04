@@ -1,0 +1,6 @@
+{% load static %}
+<link rel="stylesheet" href="{% static '/style.css'%}">
+<h1>Hey, {{user.username}} the amount of words is {{amount}}</h1>
+<nav>
+    <button><a href="/logout">Logout</a></button>
+</nav>
