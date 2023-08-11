@@ -53,6 +53,7 @@ def logout(request):
     return redirect("index")
 
 def counter(request):
-        words = request.POST.get('words')
-        amount_of_words= len(words.split())
-        return render(request, "counter.html", {"amount":amount_of_words})
+
+    words = request.POST.get('words')
+    amount_of_words= len(words.split())
+    return render(request, "counter.html", {"amount":amount_of_words})
